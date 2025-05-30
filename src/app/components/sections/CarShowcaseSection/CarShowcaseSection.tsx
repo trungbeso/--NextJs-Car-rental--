@@ -1,7 +1,7 @@
 import { ArrowRightIcon } from "lucide-react";
 import React, { useState } from "react";
-import { Button } from "@/app/components/ui/button";
-import { Card, CardContent } from "../../ui/card";
+import {Card, CardContent} from "@/app/ui/card";
+import {Button} from "@/app/ui/button";
 
 export const CarShowcaseSection = () => {
   const [carCategories, setCarCategories] = useState([

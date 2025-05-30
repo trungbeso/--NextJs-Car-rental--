@@ -49,7 +49,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="hero w-full h-screen relative bg-black overflow-hidden flex items-center justify-center">
+    <section className="w-full h-screen relative bg-black overflow-hidden flex items-center justify-center">
       <img
         className={`w-full h-full object-cover transition-opacity duration-1000 ease-in-out scale-110 ${
           isLoaded ? "opacity-100" : "opacity-0"
@@ -64,7 +64,7 @@ const Hero = () => {
       />
 
       <div className="absolute inset-0 flex items-center justify-center">
-        <div className="w-[982px] transform translate-y-[-250px] font-semibold text-white text-[64px] text-center leading-[76.8px]">
+        <div className="hero w-[982px] transform translate-y-[-250px] font-semibold text-white text-[64px] text-center leading-[76.8px]">
           {displayedWords.join(" ")}
         </div>
       </div>
