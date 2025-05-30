@@ -1,22 +1,18 @@
-"use client";
-import { CustomerTestimonialsSection } from "./screens/Home/sections/CustomerTestimonialsSection";
-import { FooterSection } from "./screens/Home/sections/FooterSection";
-import { Button } from "./components/ui/button";
+import { CustomerTestimonialsSection } from "@/components/sections/CustomerTestimonialsSection";
+import { FooterSection } from "@/components/sections/FooterSection";
+import { Button } from "@/components/ui/button";
 import { ArrowLeftIcon, ArrowRightIcon } from "lucide-react";
-import { HowItWorksSection } from "./screens/Home/sections/HowItWorksSection/HowItWorksSection";
-import { CarShowcaseSection } from "./screens/Home/sections/CarShowcaseSection/CarShowcaseSection";
-import { ServicesBenefitsSection } from "./screens/Home/sections/ServicesBenefitsSection";
-import Hero from "./screens/Home/sections/Hero/Hero";
-import Header from "./screens/Home/sections/HeaderSection/Header";
+import { HowItWorksSection } from "@/components/sections/HowItWorksSection";
+import { CarShowcaseSection } from "@/components/sections/CarShowcaseSection";
+import { ServicesBenefitsSection } from "@/components/sections/ServicesBenefitsSection";
+import Hero from "@/components/sections/Hero";
+import Header from "@/components/sections/HeaderSection";
 
 export default function Home() {
   return (
     <main className="bg-[#FFFFFFED] flex flex-col items-center w-full overflow-x-hidden">
-      {/* Fixed Header */}
       <Header />
-      {/* Hero Section - Full Viewport */}
       <Hero />
-      {/* Main Content */}
       <div className="w-[80vw] mx-auto">
         <CarShowcaseSection />
         <HowItWorksSection />
