@@ -1,9 +1,10 @@
 import { ArrowRightIcon } from "lucide-react";
 import React from "react";
-import { Button } from "../../../../components/ui/button";
-import { Card, CardContent } from "../../../../components/ui/card";
 
-export const CarShowcaseSection = (): JSX.Element => {
+import { Card, CardContent } from "../../../../components/ui/card";
+import { Button } from "@/app/components/ui/button";
+
+export const CarShowcaseSection = () => {
   // Car category data for filter buttons
   const carCategories = [
     { id: "popular", name: "Popular Car", active: true },
