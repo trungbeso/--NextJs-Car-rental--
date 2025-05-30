@@ -1,13 +1,15 @@
 "use client";
-import { CustomerTestimonialsSection } from "./screens/Home/sections/CustomerTestimonialsSection";
-import { FooterSection } from "./screens/Home/sections/FooterSection";
+
+import { CarShowcaseSection } from "./components/sections/CarShowcaseSection/CarShowcaseSection";
+import { CustomerTestimonialsSection } from "./components/sections/CustomerTestimonialsSection";
+import { FooterSection } from "./components/sections/FooterSection";
+import Header from "./components/sections/HeaderSection/Header";
+import Hero from "./components/sections/Hero/Hero";
+import { HowItWorksSection } from "./components/sections/HowItWorksSection/HowItWorksSection";
+import { ServicesBenefitsSection } from "./components/sections/ServicesBenefitsSection";
 import { Button } from "./components/ui/button";
 import { ArrowLeftIcon, ArrowRightIcon } from "lucide-react";
-import { HowItWorksSection } from "./screens/Home/sections/HowItWorksSection/HowItWorksSection";
-import { CarShowcaseSection } from "./screens/Home/sections/CarShowcaseSection/CarShowcaseSection";
-import { ServicesBenefitsSection } from "./screens/Home/sections/ServicesBenefitsSection";
-import Hero from "./screens/Home/sections/Hero/Hero";
-import Header from "./screens/Home/sections/HeaderSection/Header";
+
 
 export default function Home() {
   return (
