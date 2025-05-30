@@ -1,21 +1,18 @@
 import { ArrowRightIcon } from "lucide-react";
-import React from "react";
+import React, { useState } from "react";
 
 import { Card, CardContent } from "../../../../components/ui/card";
 import { Button } from "@/app/components/ui/button";
 
 export const CarShowcaseSection = () => {
-  // Car category data for filter buttons
-  const carCategories = [
-    { id: "popular", name: "Popular Car", active: true },
-    { id: "luxury", name: "Luxury Car", active: false },
-    { id: "vintage", name: "Vintage Car", active: false },
-    { id: "family", name: "Family Car", active: false },
-    { id: "offroad", name: "Off-Road Car", active: false },
-  ];
-
-  // Car data for the showcase
-  const carData = [
+  const [carCategories, setCarCategories] = useState([
+    { id: "popular", name: "Xe Phổ Biến", active: true },
+    { id: "luxury", name: "Xe Hạng Sang", active: false },
+    { id: "vintage", name: "Xe Cổ Điển", active: false },
+    { id: "family", name: "Xe Gia Đình", active: false },
+    { id: "offroad", name: "Xe Địa Hình", active: false },
+  ]);
+  const [cardStatus, setCardStatus] = useState([
     {
       id: 1,
       name: "Audi A8 L 2022",
@@ -94,7 +91,25 @@ export const CarShowcaseSection = () => {
       },
       featured: false,
     },
-  ];
+  ]);
+
+  const handleCardStatusChange = (id: number) => {
+    setCardStatus((prevCards) =>
+      prevCards.map((card) => ({
+        ...card,
+        featured: card.id === id,
+      }))
+    );
+  };
+
+  const handleOnCategoryClick = (categoryId: string) => {
+    setCarCategories((prevCategories) =>
+      prevCategories.map((category) => ({
+        ...category,
+        active: category.id === categoryId,
+      }))
+    );
+  };
 
   return (
     <section className="w-full py-24 bg-neutral-100 border-none shadow-[0px_8px_8px_-4px_#10182808,0px_8px_24px_#10182814]">
@@ -102,12 +117,12 @@ export const CarShowcaseSection = () => {
         {/* Section Header */}
         <div className="flex flex-col items-center gap-6 mb-12">
           <h2 className="font-['Figtree',Helvetica] font-bold text-[#0f0f0f] text-5xl tracking-[-0.96px] leading-[62.4px] text-center">
-            Our Impressive Collection of Cars
+            Bộ Sưu Tập Xe Ấn Tượng Của Chúng Tôi
           </h2>
           <p className="max-w-2xl font-['Figtree',Helvetica] font-medium text-[#0f0f0f] text-lg text-center tracking-[-0.36px] leading-[28.8px]">
-            Ranging from elegant sedans to powerful sports cars, all carefully
-            selected to provide our customers with the ultimate driving
-            experience.
+            Từ những chiếc sedan thanh lịch đến xe thể thao mạnh mẽ, tất cả đều
+            được chọn lọc kỹ lưỡng để mang đến cho bạn trải nghiệm lái tuyệt vời
+            nhất.
           </p>
         </div>
 
@@ -116,6 +131,7 @@ export const CarShowcaseSection = () => {
           {carCategories.map((category) => (
             <Button
               key={category.id}
+              onClick={() => handleOnCategoryClick(category.id)}
               variant={category.active ? "default" : "outline"}
               className={`rounded-full px-[19px] py-3 h-auto ${
                 category.active
@@ -132,9 +148,10 @@ export const CarShowcaseSection = () => {
 
         {/* Car Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {carData.map((car) => (
+          {cardStatus.map((car) => (
             <Card
               key={car.id}
+              onClick={() => handleCardStatusChange(car.id)}
               className={`rounded-3xl overflow-hidden border ${
                 car.featured
                   ? "border-black shadow-[0px_8px_8px_-4px_#10182808,0px_8px_24px_#10182814]"
@@ -253,7 +270,7 @@ export const CarShowcaseSection = () => {
         <div className="flex justify-center mt-12">
           <Button className="bg-[#0f0f0f] text-white rounded-[64px] px-10 py-4 h-auto ">
             <span className="font-['Figtree',Helvetica] font-bold text-base leading-6 mr-2">
-              See all Cars
+              Xem Thêm
             </span>
             <ArrowRightIcon className="w-6 h-6 inline" />
           </Button>

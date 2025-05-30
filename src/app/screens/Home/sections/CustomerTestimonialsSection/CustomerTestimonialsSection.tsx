@@ -1,17 +1,17 @@
 import React from "react";
 import { Button } from "../../../../components/ui/button";
 
-export const CustomerTestimonialsSection = (): JSX.Element => {
+export const CustomerTestimonialsSection = () => {
   return (
     <section className="w-full bg-[#0f0f0f] border-b border-[#ffffff1a] py-16">
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center gap-8 px-4">
         <div className="max-w-[492px]">
           <h2 className="font-bold text-white text-4xl leading-[46px] mb-5">
-            Download our mobile app ⚡
+            Liên hệ với chúng tôi để được hỗ trợ sớm nhất ⚡
           </h2>
           <p className="font-normal text-[#ffffffcc] text-base leading-[26px]">
-            Get exclusive access to car rentals with our mobile app. Download
-            now and experience convenience on the go.
+            Đội ngũ chăm sóc khách hàng chuyên nghiệp luôn sẵn sàng để được phục
+            vụ những nhu cầu của bạn.
           </p>
         </div>
 
