@@ -1,9 +1,5 @@
-import {
-  FacebookIcon,
-  InstagramIcon,
-  TwitterIcon,
-  YoutubeIcon,
-} from "lucide-react";
+
+import { FacebookIcon, InstagramIcon, TwitterIcon, YoutubeIcon } from "lucide-react";
 import React from "react";
 
 export const FooterSection = () => {
