@@ -45,7 +45,7 @@ export const HowItWorksSection = () => {
                 key={index}
                 className="border border-[#0000001a] rounded-3xl bg-white"
               >
-                <CardContent className="p-8 flex items-center justify-center">
+                <CardContent className="p-6 flex items-center justify-center">
                   <div className="py-8 px-1.5 bg-neutral-100 rounded-2xl flex flex-col items-center justify-center mr-6">
                     <div className="text-black">{step.icon}</div>
                   </div>
