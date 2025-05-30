@@ -1,5 +1,5 @@
 import { CalendarCheckIcon, SearchIcon, SmileIcon } from "lucide-react";
-import { Card, CardContent } from "../../ui/card";
+import {Card, CardContent} from "@/app/ui/card";
 
 export const HowItWorksSection = () => {
   const steps = [

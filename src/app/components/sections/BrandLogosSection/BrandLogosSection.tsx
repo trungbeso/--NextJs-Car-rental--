@@ -1,6 +1,6 @@
 import { ArrowRightIcon, CalendarIcon, MapPinIcon } from "lucide-react";
-import { Card, CardContent } from "../../ui/card";
-import { Button } from "../../ui/button";
+import {Card, CardContent} from "@/app/ui/card";
+import {Button} from "@/app/ui/button";
 
 
 export const BrandLogosSection = () => {

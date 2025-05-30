@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, CardContent } from "../../ui/card";
+import {Card, CardContent} from "@/app/ui/card";
 
 // Service data for mapping
 const services = [
