@@ -39,7 +39,7 @@ export const HowItWorksSection = () => {
 
         <div className=" h-[600px] pl-2 pt-2 flex justify-between gap-8 overflow-hidden z-10">
           <div className="absolute bg-neutral-100 w-[75%] h-[650px] right-0 top-64 rounded-2xl z-5 "></div>
-          <div className="z-20 w-full lg:w-1/2 flex flex-col gap-6">
+          <div className="z-20 p-3 w-full lg:w-1/2 flex flex-col gap-4">
             {steps.map((step, index) => (
               <Card
                 key={index}
