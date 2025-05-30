@@ -6,7 +6,7 @@ import {
 } from "lucide-react";
 import React from "react";
 
-export const FooterSection = (): JSX.Element => {
+export const FooterSection = () => {
   // Navigation links data
   const navLinks = [
     { title: "Rent", href: "#" },
