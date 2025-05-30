@@ -97,7 +97,7 @@ export const CarShowcaseSection = () => {
   ];
 
   return (
-    <section className="w-full py-24 bg-neutral-100">
+    <section className="w-full py-24 bg-neutral-100 border-none shadow-[0px_8px_8px_-4px_#10182808,0px_8px_24px_#10182814]">
       <div className="container max-w-7xl mx-auto px-4">
         {/* Section Header */}
         <div className="flex flex-col items-center gap-6 mb-12">
@@ -251,11 +251,11 @@ export const CarShowcaseSection = () => {
 
         {/* See All Button */}
         <div className="flex justify-center mt-12">
-          <Button className="bg-[#0f0f0f] text-white rounded-[64px] px-10 py-4 h-auto">
+          <Button className="bg-[#0f0f0f] text-white rounded-[64px] px-10 py-4 h-auto ">
             <span className="font-['Figtree',Helvetica] font-bold text-base leading-6 mr-2">
               See all Cars
             </span>
-            <ArrowRightIcon className="w-6 h-6" />
+            <ArrowRightIcon className="w-6 h-6 inline" />
           </Button>
         </div>
       </div>

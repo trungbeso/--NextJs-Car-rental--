@@ -38,7 +38,7 @@ export const HowItWorksSection = () => {
         </div>
 
         <div className=" h-[600px] flex justify-between gap-8 overflow-hidden z-10">
-          <div className="absolute bg-neutral-100 w-[75%] h-[650px] right-0 top-64 rounded-2xl z-5"></div>
+          <div className="absolute bg-neutral-100 w-[75%] h-[650px] right-0 top-64 rounded-2xl z-5 "></div>
           <div className="z-20 w-full lg:w-1/2 flex flex-col gap-6">
             {steps.map((step, index) => (
               <Card
