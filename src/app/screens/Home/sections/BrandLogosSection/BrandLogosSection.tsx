@@ -2,7 +2,7 @@ import { ArrowRightIcon, CalendarIcon, MapPinIcon } from "lucide-react";
 import { Button } from "../../../../components/ui/button";
 import { Card, CardContent } from "../../../../components/ui/card";
 
-export const BrandLogosSection = (): JSX.Element => {
+export const BrandLogosSection = () => {
   // Data for the form fields
   const formFields = [
     {

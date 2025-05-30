@@ -6,38 +6,38 @@ const services = [
   {
     icon: "/stars-01.svg",
     iconAlt: "Stars",
-    title: "Quality Choice",
+    title: "Lựa Chọn Chất Lượng",
     description:
-      "We offer a wide range of high-quality vehicles to choose from, including luxury cars, SUVs, vans, and more.",
+      "Chúng tôi cung cấp đa dạng các loại xe chất lượng cao để bạn lựa chọn, bao gồm xe hạng sang, SUV, xe van và nhiều hơn nữa.",
   },
   {
     icon: "/coins-hand.svg",
     iconAlt: "Coins hand",
-    title: "Affordable Prices",
+    title: "Giá Cả Phải Chăng",
     description:
-      "Our rental rates are highly competitive and affordable, allowing our customers to enjoy their trips without breaking the bank.",
+      "Mức giá thuê của chúng tôi rất cạnh tranh và phải chăng, giúp khách hàng tận hưởng chuyến đi mà không phải lo lắng về chi phí.",
   },
   {
     icon: "/check-verified-01.svg",
     iconAlt: "Check verified",
-    title: "Convenient Online Booking",
+    title: "Đặt Xe Trực Tuyến Tiện Lợi",
     description:
-      "With our easy-to-use online booking system, customers can quickly and conveniently reserve their rental car from anywhere, anytime.",
+      "Với hệ thống đặt xe trực tuyến dễ sử dụng, khách hàng có thể nhanh chóng và thuận tiện đặt xe thuê của mình từ bất cứ đâu, bất cứ lúc nào.",
   },
 ];
 
-export const ServicesBenefitsSection = (): JSX.Element => {
+export const ServicesBenefitsSection = () => {
   return (
     <section className="w-full py-24 bg-[#0f0f0f]">
       <div className="container mx-auto px-4">
         <div className="flex flex-col items-center gap-6 mb-16">
           <h2 className="font-['Figtree',Helvetica] font-bold text-white text-5xl tracking-[-0.96px] leading-[62.4px]">
-            Our Services &amp; Benefits
+            Dịch Vụ Và Lợi Ích Của Chúng Tôi
           </h2>
           <p className="max-w-[720px] font-['Figtree',Helvetica] font-medium text-white text-lg text-center tracking-[-0.36px] leading-[28.8px]">
-            To make renting easy and hassle-free, we provide a variety of
-            services and advantages. We have you covered with a variety of
-            vehicles and flexible rental terms.
+            Để việc thuê xe trở nên dễ dàng và không phiền phức, chúng tôi mang
+            đến nhiều dịch vụ và ưu điểm đa dạng. Chúng tôi luôn sẵn sàng phục
+            vụ bạn với nhiều loại xe khác nhau và các điều khoản thuê linh hoạt.
           </p>
         </div>
 
