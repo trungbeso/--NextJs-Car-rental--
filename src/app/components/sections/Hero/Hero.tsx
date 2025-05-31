@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import AnimatedText from "../Animation/AnimatedTextProps";
 
 const Hero = () => {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -31,29 +32,28 @@ const Hero = () => {
       }
     };
     // Animate words
-    let currentIndex = -1;
-    const wordInterval = setInterval(() => {
-      if (currentIndex < headingWords.length) {
-        setDisplayedWords((prev) => [...prev, headingWords[currentIndex]]);
-        currentIndex++;
-      } else {
-        clearInterval(wordInterval);
-      }
-    }, 200);
+    // let currentIndex = -1;
+    // const wordInterval = setInterval(() => {
+    //   if (currentIndex < headingWords.length) {
+    //     setDisplayedWords((prev) => [...prev, headingWords[currentIndex]]);
+    //     currentIndex++;
+    //   } else {
+    //     clearInterval(wordInterval);
+    //   }
+    // }, 200);
 
     requestAnimationFrame(scaleAnimation);
 
     return () => {
-      clearInterval(wordInterval);
+      //clearInterval(wordInterval);
     };
   }, []);
 
   return (
     <section className="w-full h-screen relative bg-black overflow-hidden flex items-center justify-center">
       <img
-        className={`w-full h-full object-cover transition-opacity duration-1000 ease-in-out scale-110 ${
-          isLoaded ? "opacity-100" : "opacity-0"
-        }`}
+        className={`w-full h-full object-cover transition-opacity duration-1000 ease-in-out scale-110 ${isLoaded ? "opacity-100" : "opacity-0"
+          }`}
         alt="Car background"
         src="/image-23.png"
         style={{
@@ -64,8 +64,13 @@ const Hero = () => {
       />
 
       <div className="absolute inset-0 flex items-center justify-center">
-        <div className="hero w-[982px] transform translate-y-[-250px] font-semibold text-white text-[64px] text-center leading-[76.8px]">
-          {displayedWords.join(" ")}
+        <div className="hero w-[982px] transform translate-y-[-100px] font-semibold text-white text-[64px] text-center leading-[76.8px]">
+          {/* {displayedWords.join(" ")} */}
+          <AnimatedText
+            text="Chúng tôi luôn đồng hành cùng bạn trên những chặng đường"
+            delayPerChar={0.03}
+            className="mt-[-250px]"
+          />
         </div>
       </div>
     </section>
