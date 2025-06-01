@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from 'react'
 import { Button } from "@/app/ui/button";
 import Link from "next/link";
+import LoginRegisterModal from "@/app/components/sections/AuthButton/LoginRegisterModal";
 
 const Header = () => {
   const [showHeader, setShowHeader] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [authMode, setAuthMode] = useState<'login' | 'register'>('login');
 
   useEffect(() => {
     const handleScroll = () => {
@@ -18,6 +21,7 @@ const Header = () => {
   }, []);
 
   return (
+      <>
     <header
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${showHeader
         ? "translate-y-0 bg-[#0f0f0f]/80 backdrop-blur-sm"
@@ -42,17 +46,34 @@ const Header = () => {
           />
         </button>
 
-        {/* Login Button (Right) */}
-        <div className="z-10">
+        {/* Login / Register Button (Right) */}
+        <div className="z-10 flex gap-2">
           <Button
             variant="outline"
             className="rounded-[48px] border bg-transparent backdrop-blur-[18px] text-white border-gray-700 shadow-md"
+            onClick={() => {
+              setAuthMode('login');
+              setIsModalOpen(true);
+            }}
           >
-            Login / Register
+            Login
+          </Button>
+          <Button
+          variant='outline'
+          className='rounded-[48px] border bg-transparent backdrop-blur-[18px] text-white border-gray-700 shadow-md'
+          onClick={() => {
+            setAuthMode('register');
+            setIsModalOpen(true);
+          }}>
+            Register
           </Button>
         </div>
       </div>
     </header>
+        {isModalOpen && (
+            <LoginRegisterModal mode={authMode} onClose={() => setIsModalOpen(false)} onSwitchMode={(mode) => setAuthMode(mode)} />
+        )}
+      </>
   )
 }
 

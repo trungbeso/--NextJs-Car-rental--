@@ -3,7 +3,6 @@ import AnimatedText from "../Animation/AnimatedTextProps";
 
 const Hero = () => {
   const [isLoaded, setIsLoaded] = useState(false);
-  const [displayedWords, setDisplayedWords] = useState<string[]>([]);
   const [imageScale, setImageScale] = useState(0.3);
   //   const headingWords =
   //     "Discover the world on wheels with our car rental service".split(" ");
@@ -31,21 +30,10 @@ const Hero = () => {
         requestAnimationFrame(scaleAnimation);
       }
     };
-    // Animate words
-    // let currentIndex = -1;
-    // const wordInterval = setInterval(() => {
-    //   if (currentIndex < headingWords.length) {
-    //     setDisplayedWords((prev) => [...prev, headingWords[currentIndex]]);
-    //     currentIndex++;
-    //   } else {
-    //     clearInterval(wordInterval);
-    //   }
-    // }, 200);
 
     requestAnimationFrame(scaleAnimation);
 
     return () => {
-      //clearInterval(wordInterval);
     };
   }, []);
 
@@ -65,7 +53,6 @@ const Hero = () => {
 
       <div className="absolute inset-0 flex items-center justify-center">
         <div className="hero w-[982px] transform translate-y-[-100px] font-semibold text-white text-[64px] text-center leading-[76.8px]">
-          {/* {displayedWords.join(" ")} */}
           <AnimatedText
             text="Chúng tôi luôn đồng hành cùng bạn trên những chặng đường"
             delayPerChar={0.03}
