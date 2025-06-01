@@ -4,7 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="57619a4b-5833-476c-8286-2b736aefa776" name="Changes" comment="" />
+    <list default="true" id="57619a4b-5833-476c-8286-2b736aefa776" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/app/components/sections/Animation/AnimatedTextProps.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/components/sections/FeedbackSection/FeedbackSection.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/utils/supabase/client.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/utils/supabase/middleware.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/utils/supabase/server.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/sections/HeaderSection/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/sections/HeaderSection/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/sections/Hero/Hero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/sections/Hero/Hero.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/sections/HowItWorksSection/HowItWorksSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/sections/HowItWorksSection/HowItWorksSection.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/utils/index.ts" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -87,6 +102,8 @@
       <recent name="D:\FULL-STACK_PROJECT\--NextJs-Car-rental--\src\app" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\FULL-STACK_PROJECT\--NextJs-Car-rental--\src\lib" />
+      <recent name="D:\FULL-STACK_PROJECT\--NextJs-Car-rental--\src" />
       <recent name="D:\FULL-STACK_PROJECT\--NextJs-Car-rental--\src\app\utils\supabase" />
     </key>
   </component>
@@ -123,8 +140,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.start" />
         <item itemvalue="npm.dev" />
+        <item itemvalue="npm.start" />
         <item itemvalue="npm.build" />
       </list>
     </recent_temporary>
@@ -149,6 +166,7 @@
       <workItem from="1748625441672" duration="908000" />
       <workItem from="1748652441430" duration="3038000" />
       <workItem from="1748655620710" duration="15000" />
+      <workItem from="1748665157271" duration="25712000" />
     </task>
     <task id="LOCAL-00001" summary="refactor project structure">
       <option name="closed" value="true" />
@@ -174,7 +192,15 @@
       <option name="project" value="LOCAL" />
       <updated>1748626112402</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="feat: integrate Supabase for server-side and client-side operations">
+      <option name="closed" value="true" />
+      <created>1748665210935</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1748665210935</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -189,6 +215,7 @@
     <MESSAGE value="refactor project structure" />
     <MESSAGE value="feat: update header component" />
     <MESSAGE value="feat: update HowItWorksSection.tsx" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: update HowItWorksSection.tsx" />
+    <MESSAGE value="feat: integrate Supabase for server-side and client-side operations" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: integrate Supabase for server-side and client-side operations" />
   </component>
 </project>

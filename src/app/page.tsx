@@ -6,11 +6,8 @@ import Header from "./components/sections/HeaderSection/Header";
 import Hero from "./components/sections/Hero/Hero";
 import { HowItWorksSection } from "./components/sections/HowItWorksSection/HowItWorksSection";
 import { ServicesBenefitsSection } from "./components/sections/ServicesBenefitsSection";
-import { ArrowLeftIcon, ArrowRightIcon } from "lucide-react";
 import React from "react";
-import { Button } from "@/app/ui/button";
 import FeedbackSection from "./components/sections/FeedbackSection/FeedbackSection";
-
 
 export default function Home() {
   return (
@@ -24,9 +21,7 @@ export default function Home() {
         <CarShowcaseSection />
         <HowItWorksSection />
       </div>
-
       <ServicesBenefitsSection />
-
       <div className="w-[80vw] mx-auto">
         <section className="w-full mt-16">
           <FeedbackSection />
